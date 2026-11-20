@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Price Optimization and Future Market Trend Analysis System</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="/static/css/app.css" rel="stylesheet">
+</head>
+<body>
+<aside id="sidebar">
+  <a class="brand" href="#/dashboard"><span class="brand-mark"><i class="bi bi-graph-up-arrow"></i></span>
+    <span><b>PriceLens</b><small>Market Analytics</small></span></a>
+  <nav id="nav"></nav>
+  <div class="side-foot">Data mining project<br>Price optimization &amp; trend analysis</div>
+</aside>
+<div id="scrim"></div>
+<div id="main">
+  <header id="topbar">
+    <button class="icon-btn d-lg-none" id="menuBtn" aria-label="Menu"><i class="bi bi-list"></i></button>
+    <div class="search">
+      <i class="bi bi-search"></i>
+      <input id="gsearch" type="search" placeholder="Search products…" autocomplete="off" aria-label="Search products">
+      <div id="gresults" class="dropdown-menu"></div>
+    </div>
+    <div class="top-right">
+      <div class="dropdown">
+        <button class="icon-btn" id="bellBtn" data-bs-toggle="dropdown" aria-label="Notifications"><i class="bi bi-bell"></i><span id="bellDot" class="dot d-none"></span></button>
+        <div class="dropdown-menu dropdown-menu-end p-0" id="bellMenu" style="width:340px"></div>
+      </div>
+      <div class="profile"><span class="avatar" id="avatar">A</span><span class="d-none d-md-block"><b id="uName">Admin</b><small id="uRole"></small></span></div>
+    </div>
+  </header>
+  <main id="view" tabindex="-1"></main>
+</div>
+<div id="toasts" class="toast-container position-fixed bottom-0 end-0 p-3"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+<script src="/static/js/core.js"></script>
+<script src="/static/js/pages1.js"></script>
+<script src="/static/js/pages2.js"></script>
+<script src="/static/js/boot.js"></script>
+</body>
+</html>
